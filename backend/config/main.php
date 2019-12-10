@@ -11,6 +11,7 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
+    'language'=>'ru-Ru',
     'modules' => [],
     'components' => [
         'request' => [
@@ -43,6 +44,7 @@ return [
             'showScriptName' => false,
             'rules' => [
                 'login'=>'site/login',
+                'aples'=>'aple/index',
             ],
         ],
         
