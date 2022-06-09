@@ -1,6 +1,6 @@
 <?php 
 
-$this->title='Управление яблоками';
+$this->title = 'Управление яблоками';
 
 \backend\assets\ApleAsset::register($this);
 

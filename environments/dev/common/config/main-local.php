@@ -3,9 +3,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=aple',
-            'username' => 'aple',
-            'password' => 'aple',
+            'dsn' => 'sqlite:@backend/runtime/data.db',
+            /*'username' => 'aple',
+            'password' => 'aple',*/
             'charset' => 'utf8',
         ],
         'mailer' => [
