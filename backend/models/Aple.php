@@ -147,7 +147,7 @@ class Aple extends \yii\base\Model
         if (!empty($this->ddown)) {
             return false;
         }
-        Yii::$app->db->createCommand("update {{aples}} set [[ddown]]=strftime('%s', 'now') where [[id]]=:id", [':id' => $this->id])->execute();
+        Yii::$app->db->createCommand("update {{aples}} set [[ddown]]=unix_timestamp() where [[id]]=:id", [':id' => $this->id])->execute();
 
         return true;
     }
