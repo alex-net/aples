@@ -58,3 +58,19 @@ frontend
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
+
+Этапы установки
+----------------------------------
+* Скачать репозитарий 
+* в корневом каталоге выполнить 
+    - `docker compose up` - запуск сборки
+    - `docker exec -ti aples-php-1 sh` - вход в контейнер php 
+    - `composer i` - установка пакетов php через composer
+    - `./init` - разворачиваение приложения Advanced (можно выбрать любой вариант: хоть dev хоть prod)
+    - `./yii migrate` - применить миграции
+* в браузере: 
+    - перейти по адресу [localhost:8081](http://localhost:8081/)
+    - Выполнить авторизацию на странице [/login](http://localhost:8081/login): admin:admin 
+    - В меню сайта перейти по ссылке [Яблоки](http://localhost:8081/aples) 
+
+Детали реализации страницы расписаны в файле [test-job.md](test-job.md)
